@@ -1,0 +1,13 @@
+header {
+    text-align: center;
+    margin: 1.5%;
+}
+
+header h1 {
+  padding: 1.5%;
+}
+
+hr {
+  margin-left: 5%;
+  margin-right: 5%;
+}

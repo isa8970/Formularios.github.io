@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <title>Formularios</title>
+  </head>
+  <body>
+    <header>
+      <h1>Prototipos de Formularios</h1>
+    </header>
+
+    <hr>
+
+    <main>
+      <section class=" cntainer-fluid row  m-5">
+        <section class="col-2 m-2 p-3 shadow p-3 mb-5 bg-body-tertiary rounded">
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="../index.html">Registro de usuario</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link" href="../views/ContactoProfesional.html">Contacto Profesional</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Cita Médica</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../views/Pedidos.html">Formulario de Pedido</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../views/EvaluacionServicios.html">Evaluación de Servicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../views/SolicitudEmpleo.html">Solicitud de Empleo</a>
+            </li>
+          </ul>
+        </section>
+        <section class="col 10 m-2 shadow p-3 mb-5 bg-body-tertiary rounded">
+          <h3>Cita Médica</h3>
+          <br>
+          <div class="row">
+            <div class="col">
+              <input
+                type="text"
+                class="form-control border-primary"
+                placeholder="Nombres"
+                aria-label="First name"
+              />
+            </div>
+            <div class="col">
+              <input
+                type="text"
+                class="form-control border-primary"
+                placeholder="Apellidos"
+                aria-label="Last name"
+              />
+            </div>
+          </div>
+          <br>
+  <label for="range4" class="form-label">Edad</label>
+<input type="range" class="form-range" min="0" max="100" value="50" id="range4">
+<output for="range4" id="rangeValue" aria-hidden="true"></output>
+
+<script>
+  // This is an example script, please modify as needed
+  const rangeInput = document.getElementById('range4');
+  const rangeOutput = document.getElementById('rangeValue');
+
+  // Set initial value
+  rangeOutput.textContent = rangeInput.value;
+
+  rangeInput.addEventListener('input', function() {
+    rangeOutput.textContent = this.value;
+  });
+</script>
+<br>
+<br>
+<select class="form-select" aria-label="Default select example">
+  <option selected>Tipo de consulta</option>
+  <option value="1">Consulta de primera vez</option>
+  <option value="2">Consultas de control o seguimiento</option>
+  <option value="3">Consultas preventivas</option>
+  <option value="3">Consultas especializadas</option>
+</select>
+  </div>
+  
+<br>
+ 
+<form>
+  <label>Fecha y hora</label>
+  <input class="border-primary rounded" type="datetime-local">
+</form>
+<br>
+<div class="mb-3">
+  <label for="exampleFormControlTextarea1" class="form-label">Síntomas principales</label>
+  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+</div>
+
+<div class="row mx-1">
+  <button type="button" class="btn btn-primary">Agendar</button>
+</div>
+
+        </section>
+      </section>
+    </main>
+  </body>
+</html>
+
